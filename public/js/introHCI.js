@@ -9,5 +9,12 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	$('.likeBtn').click(addProjectDetails); // handler
+}
+
+/*
+ * Make an AJAX call to retrieve project details and add it in
+ */
+function addProjectDetails(e) { // listener
+	ga("send", "event", 'like', 'click');
 }
